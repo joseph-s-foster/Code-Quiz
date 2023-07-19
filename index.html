@@ -3,12 +3,41 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="./assets/reset.css"/>
-    <link rel="stylesheet" href="./assets/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/reset.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
     <title>Code Quiz</title>
 </head>
 
 <body>
+
+    <header>
+        <p class="high-scores">Show High Scores</p>
+        <p class="timer">Timer: <span id="time"></span></p>
+    </header>
+
+    <section class="start">
+        <h1>Timed Coding Quiz</h1>
+        <p>.........</p>
+        <button id="start-button">Start</button>
+    </section>
+
+    <section class="quiz hide">
+        <h2 class="questions"></h2>
+        <div class="answers"></div>
+    </section>
+
+    <section class="quiz-end hide">
+        <h3>Score: <span id="final-score"></span></h3>
+        <p>Initial in the box below.</p>
+        <input type="text" id="initials" />
+        <button id="save-score">Submit Scores</button>
+    </section>
+
+    <section class="leaderboard hide">
+        <h3>Leaderboard</h3>
+        <ol></ol>
+    </section>
+
     <script src="./assets/script.js"></script>
 </body>

@@ -16,3 +16,7 @@ body {
     font-family: 'Project Sans', sans-serif;
     color: var(--light);
 }
+
+.hide {
+    display: none;
+}

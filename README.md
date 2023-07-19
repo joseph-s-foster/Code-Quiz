@@ -2,6 +2,6 @@
 
 ## Description
 
-## Link to Site
+## Link to site
 
 ## Screenshot
