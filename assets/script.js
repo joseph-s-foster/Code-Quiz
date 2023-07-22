@@ -67,7 +67,7 @@ function countdown() {
 }
 
 function displayQuestion() {
-    questions.classList.remove("hide");
+
 }
 
 function quizEnd() {
