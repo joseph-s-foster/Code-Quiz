@@ -2,6 +2,7 @@
     --light: #ffffff;
     --dark: #000;
     --grey: #818181;
+    --green: #22a38e;
 }
 
 * {
@@ -17,6 +18,50 @@ body {
     color: var(--light);
 }
 
+.header {
+    height: 100px;
+}
+
+.title {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 2%;
+}
+
+.timer {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.high-scores {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.start {
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+button {
+    display: inline-block;
+    margin: 20px;
+    cursor: pointer;
+    font-size: 100%;
+    background-color: var(--green);
+    border-radius: 5px;
+    padding: 2px 10px;
+    color: white;
+    border: 0;
+  }
+
+.footer {
+    height: 100px;
+}
+  
 .hide {
     display: none;
 }
