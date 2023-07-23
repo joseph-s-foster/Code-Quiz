@@ -44,7 +44,7 @@ var questions = [
 
 function displayQuestion() {
     var currentQuestion = questions[currentQuestionIndex];
-    var titleEl = document.querySelector('#question-title');
+    var titleEl = document.querySelector('#questions-title');
     titleEl.textContent = currentQuestion.title;
     choicesEl.innerHTML = '';
 
