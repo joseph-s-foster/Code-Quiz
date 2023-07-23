@@ -1,18 +1,16 @@
 var time = 60;
 var currentQuestionIndex = 0;
 var timeEl = document.querySelector("#time");
-// var header = document.querySelector("header");
 var startEl = document.querySelector(".start");
 var startButton = document.querySelector("#start-button");
 var questionsEl = document.querySelector("#questions");
 var choicesEl = document.querySelector("#choices");
-// var answersEl = document.querySelector("#answers");
 var quizEndEl = document.querySelector("#quiz-end");
 var finalScore = document.querySelector("#final-score");
-var initialsEl = document.querySelector("#initials");
+var nameEl = document.querySelector("#name");
 var saveScoreButton = document.querySelector("#save-score");
 var leaderboardEl = document.querySelector("#leaderboard");
-var olEl = document.querySelector("ol");
+var olEl = document.querySelector("#ol");
 var timeInterval;
 var questions = [
     {
@@ -112,9 +110,16 @@ function quizEnd() {
     questionsEl.setAttribute("class", "hide");
 }
 
-startButton.addEventListener("click", startQuiz)
+function leaderboard() {
+    quizEndEl.classList.add("hide");
+    leaderboardEl.classList.remove("hide");
+}
 
-choicesEl.addEventListener("click", questionClick)
+startButton.addEventListener("click", startQuiz);
+
+choicesEl.addEventListener("click", questionClick);
+
+saveScoreButton.addEventListener("click", leaderboard);
 
 // display q, check answers
 // questions 
