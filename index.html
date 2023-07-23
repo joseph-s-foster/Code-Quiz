@@ -12,7 +12,7 @@
 <body>
 
     <header class="header">
-        <h1 class="title">Timed Coding Quiz</h1>
+        <h1>Timed Coding Quiz</h1>
         <p class="high-scores">Show High Scores</p>
         <p class="timer">Timer: <span id="time"></span></p>
     </header>
@@ -23,19 +23,19 @@
         <button id="start-button">Start</button>
     </section>
 
-    <section class="quiz hide">
-        <h2 class="questions"></h2>
-        <div class="answers"></div>
+    <section id="questions" class="hide">
+        <h2 id="questions-title"></h2>
+        <div id="choices" class="choices"></div>
     </section>
 
-    <section class="quiz-end hide">
+    <section id="quiz-end" class="hide">
         <h3>Score: <span id="final-score"></span></h3>
         <p>Initial in the box below.</p>
         <input type="text" id="initials" />
         <button id="save-score">Submit Score</button>
     </section>
 
-    <section class="leaderboard hide">
+    <section id="leaderboard" class="hide">
         <h3>Leaderboard</h3>
         <ol></ol>
     </section>

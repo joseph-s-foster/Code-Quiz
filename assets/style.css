@@ -22,7 +22,7 @@ body {
     height: 100px;
 }
 
-.title {
+.header h1 {
     font-size: 2rem;
     text-align: center;
     padding-top: 2%;
