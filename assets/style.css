@@ -72,6 +72,11 @@ div {
     text-align: center;
 }
 
+.score {
+    justify-content: center;
+    text-align: center; 
+}
+
 .footer {
     height: 100px;
 }

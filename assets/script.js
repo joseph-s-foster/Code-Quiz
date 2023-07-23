@@ -42,11 +42,19 @@ var questions = [
     },
 ];
 
+function startQuiz() {
+    startEl.classList.add("hide");
+    timeInterval = setInterval(countdown, 1000);
+    timeEl.textContent = time;
+    questionsEl.removeAttribute("class");
+    displayQuestion()
+}
+
 function displayQuestion() {
     var currentQuestion = questions[currentQuestionIndex];
-    var titleEl = document.querySelector('#questions-title');
+    var titleEl = document.querySelector("#questions-title");
     titleEl.textContent = currentQuestion.title;
-    choicesEl.innerHTML = '';
+    choicesEl.innerHTML = "";
 
     for (var i = 0; i < currentQuestion.choices.length; i++) {
         var choice = currentQuestion.choices[i];
@@ -58,6 +66,32 @@ function displayQuestion() {
     }
 }
 
+function questionClick(event) {
+    var buttonEl = event.target;
+
+    if (!buttonEl.matches(".choice")) {
+        return;
+    }
+
+    if (buttonEl.value !== questions[currentQuestionIndex].answer) {
+        time -= 20;
+
+        if (time < 0) {
+            time = 0;
+        }
+    }
+
+    timeEl.textContent = time;
+
+    currentQuestionIndex++;
+
+    if (time <= 0 || currentQuestionIndex === questions.length) {
+        quizEnd();
+    } else {
+        displayQuestion();
+    }
+}
+
 function countdown() {
     time--;
     timeEl.textContent = time;
@@ -66,19 +100,21 @@ function countdown() {
     }
 }
 
-function startQuiz() {
-    startEl.classList.add("hide");
-    timeInterval = setInterval(countdown, 1000);
-    timeEl.textContent = time;
-    questionsEl.removeAttribute("class");
-    displayQuestion()
+function quizEnd() {
+    clearInterval(timeInterval);
+
+    var quizEndEl = document.querySelector('#quiz-end');
+    quizEndEl.classList.remove("hide");
+
+    var finalScoreEl = document.querySelector('#final-score');
+    finalScoreEl.textContent = time;
+
+    questionsEl.setAttribute("class", "hide");
 }
 
 startButton.addEventListener("click", startQuiz)
 
-function quizEnd() {
-    clearInterval(timeInterval)
-}
+choicesEl.addEventListener("click", questionClick)
 
 // display q, check answers
 // questions 
