@@ -72,7 +72,7 @@ function questionClick(event) {
     }
 
     if (buttonEl.value !== questions[currentQuestionIndex].answer) {
-        time -= 20;
+        time -= 15;
 
         if (time < 0) {
             time = 0;
@@ -120,6 +120,3 @@ startButton.addEventListener("click", startQuiz);
 choicesEl.addEventListener("click", questionClick);
 
 saveScoreButton.addEventListener("click", leaderboard);
-
-// display q, check answers
-// questions 
