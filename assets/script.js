@@ -10,7 +10,7 @@ var finalScore = document.querySelector("#final-score");
 var nameEl = document.querySelector("#name");
 var saveScoreButton = document.querySelector("#save-score");
 var leaderboardEl = document.querySelector("#leaderboard");
-var olEl = document.querySelector("#ol");
+var scoresEl = document.querySelector("#ol");
 var timeInterval;
 var questions = [
     {

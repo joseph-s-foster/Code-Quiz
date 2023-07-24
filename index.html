@@ -13,7 +13,7 @@
 
     <header class="header">
         <h1>Timed Coding Quiz</h1>
-        <p class="high-scores">Show High Scores</p>
+        <a href=scores.html class="high-scores">Show High Scores</a>
         <p class="timer">Timer: <span id="time"></span></p>
     </header>
 
@@ -32,12 +32,12 @@
         <h3>Score: <span id="final-score"></span></h3>
         <p>Enter your name in the box below.</p>
         <input type="text" id="name" />
-        <button id="save-score">Submit Score</button>
+        <button id="save-score">Submit</button>
     </section>
 
     <section id="leaderboard" class="score hide">
         <h3>Leaderboard</h3>
-        <ol id="ol"></ol>
+        <ol id="scores"></ol>
         <a href="index.html"><button>Retry</button></a>
         <button id="clear">Clear Scores</button>
     </section>
