@@ -10,7 +10,7 @@ var finalScore = document.querySelector("#final-score");
 var nameEl = document.querySelector("#name");
 var saveScoreButton = document.querySelector("#save-score");
 var leaderboardEl = document.querySelector("#leaderboard");
-var scoresEl = document.querySelector("#ol");
+var scoresEl = document.querySelector("#scores");
 var timeInterval;
 var questions = [
     {
@@ -108,15 +108,24 @@ function quizEnd() {
     finalScoreEl.textContent = time;
 
     questionsEl.setAttribute("class", "hide");
+
+    saveScoreButton.onclick = saveScore
 }
 
-function leaderboard() {
-    quizEndEl.classList.add("hide");
-    leaderboardEl.classList.remove("hide");
+function saveScore() {
+    var highscores = JSON.parse(localStorage.getItem("scores")) || []
+    var score = {
+        name: nameEl.value,
+        score: time
+    }
+
+    highscores.push(score)
+    localStorage.setItem("scores", JSON.stringify(highscores))
+
+    window.location.href = "scores.html"
+
 }
 
 startButton.addEventListener("click", startQuiz);
 
 choicesEl.addEventListener("click", questionClick);
-
-saveScoreButton.addEventListener("click", leaderboard);

@@ -52,6 +52,10 @@ body {
     padding: 20px;
 }
 
+button:hover {
+    scale: 105%;
+}
+
 button {
     margin: 20px;
     cursor: pointer;
