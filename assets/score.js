@@ -5,7 +5,7 @@ highscores.sort(function(a,b){
 
 for (var i = 0; i < highscores.length; i++){
     var liEl = document.createElement("li")
-    liEl.textContent = highscores[i].name + " - " + highscores[i].score
+    liEl.textContent = highscores[i].name + ": " + highscores[i].score
     document.querySelector("#scores").append(liEl)
 }
 

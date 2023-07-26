@@ -1,6 +1,6 @@
 :root {
     --light: #ffffff;
-    --dark: #000;
+    --dark: #212529;
     --grey: #818181;
     --blue: #007aff;
 }
@@ -65,7 +65,7 @@ button {
     padding: 2px 10px;
     color: var(--light);
     border: 0;
-  }
+}
 
 h2 {
     justify-content: center;
@@ -80,13 +80,9 @@ div {
 
 .score {
     justify-content: center;
-    text-align: center; 
+    text-align: center;
 }
 
-.footer {
-    height: 100px;
-}
-  
 .hide {
     display: none;
 }
