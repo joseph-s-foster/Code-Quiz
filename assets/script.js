@@ -14,9 +14,9 @@ var scoresEl = document.querySelector("#scores");
 var timeInterval;
 var questions = [
     {
-        title: 'What converts a string to a number in JavaScript?',
-        choices: ['function()', 'toNumber()', 'Math.abs()', 'parseInt()'],
-        answer: 'parseInt()',
+        title: 'Arrays are enclosed within ____.',
+        choices: ['parenthesis', 'quotations', 'hashtags', 'brackets'],
+        answer: 'brackets',
     },
     {
         title: 'Common data types DO NOT include:',
