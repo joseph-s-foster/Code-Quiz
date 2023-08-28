@@ -109,26 +109,25 @@ div {
 }
 
 .footer {
+    background-color: var(--dark);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--light);
     height: 48px;
-    background-color: var(--dark);
     text-align: center;
     position: absolute;
     bottom: 0;
     width: 100%;
-}
-
-.footer a {
+  }
+  
+  .footer a {
     color: var(--light);
     text-decoration: none;
-}
-
-.footer a:hover {
+  }
+  
+  .footer a:hover span {
     text-decoration: underline;
-}
+  }
 
 @media screen and (max-width: 690px) {
     .header a {
