@@ -17,6 +17,12 @@ body {
     color: var(--light);
 }
 
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -48px;
+    padding-bottom: 48px;
+}
+
 .header {
     display: flex;
     flex-direction: column;
@@ -100,6 +106,27 @@ div {
 
 .hide {
     display: none;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--light);
+    height: 48px;
+    background-color: #1e2022;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 600px) {

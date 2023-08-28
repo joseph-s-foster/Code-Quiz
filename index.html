@@ -6,34 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/reset.css" />
     <link rel="stylesheet" href="./assets/style.css" />
-    <title>Code Quiz</title>
+    <title>Coding Quiz</title>
 </head>
 
 <body>
 
-    <header class="header">
-        <h1>Timed Coding Quiz</h1>
-        <a href=scores.html class="high-scores">Show High Scores</a>
-        <p class="timer">Timer:&nbsp;<span id="time"></span></p>
-    </header>
+    <main class="wrapper">
 
-    <section class="start">
-        <p>You have 60 seconds to complete the quiz. Incorrect answers will subtract 15 seconds from
-            the timer.</p>
-        <button id="start-button">Start</button>
-    </section>
+        <header class="header">
+            <h1>Timed Coding Quiz</h1>
+            <a href=scores.html class="high-scores">Show High Scores</a>
+            <p class="timer">Timer:&nbsp;<span id="time"></span></p>
+        </header>
 
-    <section id="questions" class="hide">
-        <h2 id="questions-title"></h2>
-        <div id="choices"></div>
-    </section>
+        <section class="start">
+            <p>You have 60 seconds to complete the quiz.<br>
+                Incorrect answers will subtract 5 seconds from
+                the timer.</p>
+            <button id="start-button">Start</button>
+        </section>
 
-    <section id="quiz-end" class="score hide">
-        <h3>Score: <span id="final-score"></span></h3>
-        <p>Enter your name in the box below.</p>
-        <input type="text" id="name" />
-        <button id="save-score">Submit</button>
-    </section>
+        <section id="questions" class="hide">
+            <h2 id="questions-title"></h2>
+            <div id="choices"></div>
+        </section>
+
+        <section id="quiz-end" class="score hide">
+            <h3>Score: <span id="final-score"></span></h3>
+            <input type="text" id="name" placeholder="Enter your name" />
+            <button id="save-score">Submit</button>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <a class="footer" href="https://github.com/joseph-s-foster/Coding-Quiz">GitHub</a>
+    </footer>
 
     <script src="./assets/script.js"></script>
 
