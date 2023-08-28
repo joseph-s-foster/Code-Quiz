@@ -122,6 +122,7 @@ div {
 }
 
 .footer a {
+    color: var(--light);
     text-decoration: none;
 }
 
