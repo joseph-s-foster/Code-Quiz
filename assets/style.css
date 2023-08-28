@@ -11,10 +11,10 @@
 }
 
 body {
-    height: 100vh;
     background-color: var(--dark);
     font-family: 'Project Sans', sans-serif;
     color: var(--light);
+    overflow-x: hidden;
 }
 
 .wrapper {
@@ -133,16 +133,7 @@ div {
 
 
 @media screen and (max-width: 690px) {
-    .header a {
-        position: static;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-}
-
-@media screen and (max-width: 690px) {
-    .header p {
+    .header a, .header p  {
         position: static;
         width: 100%;
         display: flex;
