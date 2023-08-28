@@ -14,14 +14,19 @@ var scoresEl = document.querySelector("#scores");
 var timeInterval;
 var questions = [
     {
-        title: 'Commonly used data types DO NOT include:',
+        title: 'What converts a string to a number in JavaScript?',
+        choices: ['function()', 'toNumber()', 'Math.abs()', 'parseInt()'],
+        answer: 'parseInt()',
+    },
+    {
+        title: 'Common data types DO NOT include:',
         choices: ['strings', 'booleans', 'alerts', 'numbers'],
         answer: 'alerts',
     },
     {
-        title: 'The condition in an if / else statement is enclosed within ____.',
-        choices: ['quotes', 'curly brackets', 'parentheses', 'square brackets'],
-        answer: 'parentheses',
+        title: 'Which operator is used for strict equality ____.',
+        choices: ['=', '==', '===', '!=='],
+        answer: '===',
     },
     {
         title: 'Arrays in JavaScript can be used to store ____.',
@@ -29,14 +34,34 @@ var questions = [
         answer: 'all of the above',
     },
     {
-        title: 'String values must be enclosed within ____ when being assigned to variables.',
-        choices: ['commas', 'curly brackets', 'quotes', 'parentheses'],
-        answer: 'quotes',
+        title: 'What does "NaN" represent in JavaScript?',
+        choices: ['not a number', 'null', 'no argument', 'no activation'],
+        answer: 'not a number',
     },
     {
-        title: 'A very useful tool used during development and debugging for printing content to the debugger is:',
-        choices: ['JavaScript', 'terminal / bash', 'for loops', 'console.log'],
-        answer: 'console.log',
+        title: 'Which function is used to parse a JSON string?',
+        choices: ['parseJSON()', 'toJSON()', 'JSON.parse()', 'stringify()'],
+        answer: 'JSON.parse()',
+    },
+    {
+        title: 'How do you comment lines in JavaScript?',
+        choices: ['##', '//', '--', '||'],
+        answer: '//',
+    },
+    {
+        title: 'Which function converts a string to lowercase?',
+        choices: ['toLower()', 'lowerCase()', 'toLowerCase()', 'stringToLower()'],
+        answer: 'toLowerCase()',
+    },
+    {
+        title: 'How do you declare a constant in JavaScript?',
+        choices: ['const', 'for', 'let', 'var'],
+        answer: 'const',
+    },
+    {
+        title: 'Which operator combines two or more strings?',
+        choices: ['+=', '++', '&', '+'],
+        answer: '+',
     },
 ];
 
@@ -59,9 +84,12 @@ function displayQuestion() {
         var choiceNode = document.createElement("button");
         choiceNode.setAttribute("class", "choice");
         choiceNode.setAttribute("value", choice);
-        choiceNode.textContent = i + 1 + '. ' + choice;
+        // var choiceLetter = String.fromCharCode(65 + i);
+        // choiceNode.textContent = choiceLetter + '. ' + choice;
+        choiceNode.textContent = choice;
         choicesEl.appendChild(choiceNode);
     }
+    
 }
 
 function questionClick(event) {
@@ -72,7 +100,7 @@ function questionClick(event) {
     }
 
     if (buttonEl.value !== questions[currentQuestionIndex].answer) {
-        time -= 15;
+        time -= 5;
 
         if (time < 0) {
             time = 0;

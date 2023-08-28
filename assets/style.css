@@ -1,7 +1,6 @@
 :root {
     --light: #ffffff;
-    --dark: #212529;
-    --grey: #818181;
+    --dark: #1e2022;
     --blue: #007aff;
 }
 
@@ -32,6 +31,7 @@ body {
 
 .timer {
     position: absolute;
+    margin-top: 8px;
     top: 20px;
     left: 20px;
 }
@@ -40,12 +40,13 @@ body {
     color: var(--light);
     text-decoration: none;
     position: absolute;
+    margin-top: 8px;
     top: 20px;
     right: 20px;
 }
 
 .high-scores:hover {
-    color: var(--grey);
+    text-decoration: underline;
 }
 
 .start {
@@ -55,7 +56,7 @@ body {
 }
 
 button:hover {
-    scale: 105%;
+    scale: 102%;
 }
 
 button {
