@@ -13,7 +13,7 @@
 - When the user submits their name and score to the leaderboard, the data is also scored in local storage
 
 ## Link to site
-https://joseph-s-foster.github.io/Code-Quiz/
+https://joseph-s-foster.github.io/Coding-Quiz/
 
 ## Screenshot
 ![Screenshot of page](./assets/Screenshot.png)
