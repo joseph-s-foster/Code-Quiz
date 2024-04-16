@@ -60,7 +60,7 @@ const questions = [
     answer: "const",
   },
   {
-    title: "____ is sued to combine datatypes.",
+    title: "____ is used to combine datatypes.",
     choices: ["+=", "++", "&", "+"],
     answer: "+",
   },
