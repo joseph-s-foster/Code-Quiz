@@ -22,7 +22,8 @@ body {
 .header {
   display: flex;
   flex-direction: column;
-  padding: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   margin-left: 12%;
   margin-right: 12%;
   border-bottom: var(--grey) solid 2px;
