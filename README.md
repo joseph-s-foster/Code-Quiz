@@ -2,9 +2,6 @@
 
 ## Description
 
-- Structured the page into hideable sections using HTML
-- Styled the page using CSS
-- Provided a timer, quiz questions, local score storage, and button functionality with JavaScript
 - When the start button is clicked, the timer starts and a question is shown
 - When a correct answer is selected, a new question is shown
 - When an incorrect answer is selected, time is subtracted from the timer, and a new question is shown
