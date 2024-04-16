@@ -35,7 +35,7 @@ const questions = [
     answer: "all of the above",
   },
   {
-    title: '"NaN" represents ____.',
+    title: '"NaN" is the abbreviation for ____.',
     choices: ["not a number", "null", "no argument", "no activation"],
     answer: "not a number",
   },
@@ -55,12 +55,12 @@ const questions = [
     answer: "toLowerCase()",
   },
   {
-    title: "____ declares a constant.",
+    title: "____ is used to declare a constant.",
     choices: ["const", "for", "let", "var"],
     answer: "const",
   },
   {
-    title: "____ combines datatypes.",
+    title: "____ is sued to combine datatypes.",
     choices: ["+=", "++", "&", "+"],
     answer: "+",
   },

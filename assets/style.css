@@ -190,3 +190,38 @@ div {
     margin-right: 5%;
   }
 }
+
+@media screen and (max-width: 400px) {
+.header h1 {
+  font-size: 2rem;
+}
+.start {
+  margin-top: 144px;
+  font-size: 1.5rem;
+}
+button {
+  width: 240px;
+  font-size: 1.5rem;
+}
+.timer {
+  font-size: 1.5rem;
+}
+.questions {
+  font-size: 1.5rem;
+}
+#choices button {
+  width: 240px;
+  font-size: 1.5rem;
+}
+.score {
+  margin-top: 24px;
+  font-size: 1.5rem;
+}
+.name {
+  width: 240px;
+  font-size: 1.5rem;
+}
+.leaderboard {
+  font-size: 1.5rem;
+}
+}
