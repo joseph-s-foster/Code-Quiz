@@ -35,7 +35,7 @@ const questions = [
     answer: "all of the above",
   },
   {
-    title: '"NaN" is the abbreviation for ____.',
+    title: '"NaN" is the acronym for ____.',
     choices: ["not a number", "null", "no argument", "no activation"],
     answer: "not a number",
   },
