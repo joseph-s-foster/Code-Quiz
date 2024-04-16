@@ -34,7 +34,7 @@ body {
 }
 
 .timer {
-  padding: 48px;
+  padding: 24px;
   text-align: center;
   font-size: 2rem;
 }
@@ -43,7 +43,7 @@ body {
   margin-left: 12%;
   margin-right: 12%;
   font-size: 2rem;
-  padding-bottom: 48px;
+  padding-bottom: 24px;
 }
 
 .name {
@@ -181,4 +181,11 @@ div {
 
 .footer a:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 690px) {
+  .header, .footer {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }
